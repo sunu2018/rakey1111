@@ -276,11 +276,12 @@ def sendMessageWithMention(to, lineMID):
 def myhelp():
     myHelp = " ╭════ บ อ ท ท ด ล อ ง น้ อ ง สุ " + "\n" \
                   "║About" + "\n" + \
-                  "║Help media" + "\n" + \
-                  "║Help kicker" + "\n" + \
-                  "║Help group" + "\n" + \
-                  "║Help protect" + "\n" + \
-                  "║Help setting" + "\n" + \
+                  "║Help1" + "\n" + \
+                  "║Help2" + "\n" + \
+                  "║Help3" + "\n" + \
+                  "║Help4" + "\n" + \
+                  "║Help5" + "\n" + \
+                  "║Help6" + "\n" + \
                   "║textTospeech" + "\n" + \
                   "║Languange" + "\n" + \
                   "║Me" + "\n" + \
@@ -397,7 +398,7 @@ def helpkicker():
     return helpKicker
     
 def helpsetting():
-    helpSetting = "╭════SettingList " + "\n" + \
+    helpSetting = "╭════ป้ อ ง กั น " + "\n" + \
     "║Protect on/off" + "\n" + \
     "║Cancel pro on/off" + "\n" + \
     "║Invit pro on/off" + "\n" + \
@@ -684,23 +685,23 @@ def lineBot(op):
                         p = Pool(20)
                         p.map(Rapid1Say,rmtosay)
                         p.close()
-                if text.lower() == 'my help':
+                if text.lower() == 'help1':
                     myHelp = myhelp()
                     line.sendMessage(to, str(myHelp))
-                elif text.lower() == 'help set':
+                elif text.lower() == 'help2':
                     helpSet = helpset()
                     line.sendMessage(to, str(helpSet))
                     sendMessageWithMention(to, lineMID)
-                elif text.lower() == 'help kicker':
+                elif text.lower() == 'help3':
                     helpKicker = helpkicker()
                     line.sendMessage(to, str(helpKicker))
-                elif text.lower() == 'help group':
+                elif text.lower() == 'help4':
                     listGrup = listgrup()
                     line.sendMessage(to, str(listGrup))
-                elif text.lower() == 'help setting':
+                elif text.lower() == 'help5':
                     helpSetting = helpsetting()
                     line.sendMessage(to, str(helpSetting))
-                elif text.lower() == 'help media':
+                elif text.lower() == 'help6':
                     socMedia = socmedia()
                     line.sendMessage(to, str(socMedia))
                 elif text.lower() == 'texttospeech':
@@ -738,14 +739,14 @@ def lineBot(op):
                         grouplist = line.getGroupIdsJoined()
                         contactlist = line.getAllContactIds()
                         blockedlist = line.getBlockedContactIds()
-                        ret_ = "╔══[ ✯ɢʜᴏsᴛ ᴛᴇᴀᴍ✯ ]"
+                        ret_ = "╔══[ ꧁🌸ℓຫຼี้छՃิ🌸꧂ ]"
                         ret_ += "\n╠۝ ชื่อ ═ {}".format(contact.displayName)
                         ret_ += "\n╠۝ กลุ่ม ═ {}".format(str(len(grouplist)))
                         ret_ += "\n╠۝ เพื่อน ═ {}".format(str(len(contactlist)))
                         ret_ += "\n╠۝ บล็อค ═ {}".format(str(len(blockedlist)))
                         ret_ += "\n╠══[สถานะ]"
                         ret_ += "\n╠۝ ผู้สร้าง ═ {}".format(creator.displayName)
-                        ret_ += "\n╚══[ ✯ɢʜᴏsᴛ ᴛᴇᴀᴍ✯ ]"
+                        ret_ += "\n╚══[ ꧁🍁✟ℓຫຼี้छゆຸ۞🍁꧂ ]"
                         line.sendContact(to, owner)
                         line.sendMessage(to, str(ret_))
                     except Exception as e:
