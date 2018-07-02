@@ -1777,7 +1777,7 @@ def lineBot(op):
                         ginfo = line.getGroup(receiver)
                         try:
                             line.leaveGroup(receiver)
-			    ki1.leaveGroup(receiver)
+                            ki1.leaveGroup(receiver)
                             ki2.leaveGroup(receiver)
                             ki3.leaveGroup(receiver)
                             ki4.leaveGroup(receiver)	
