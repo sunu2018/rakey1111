@@ -418,189 +418,6 @@ def helpsetting():
     "║Leavemessage on/off" + "\n" + \
     "╰════"
     return helpSetting
-
-def helptexttospeech():
-    helpTextToSpeech =   "╔══════════════┓" + "\n" + \
-                         "╠⌬ ✰self protect✰    ⌬" + "\n" + \
-                         "╚══════════════┛" + "\n" + \
-                         "────┅═ই۝ई═┅────" + "\n" + \
-                         "          ʜᴇʟᴘ ᴛᴇxᴛᴛᴏsᴘᴇᴇᴄʜ" + "\n" + \
-                         "────┅═ই۝ई═┅────" + "\n" + \
-                         "╔══════════════┓" + "\n" + \
-                         "╠❂ af : Afrikaans" + "\n" + \
-                         "╠❂ sq : Albanian" + "\n" + \
-                         "╠❂ ar : Arabic" + "\n" + \
-                         "╠❂ hy : Armenian" + "\n" + \
-                         "╠❂ bn : Bengali" + "\n" + \
-                         "╠❂ ca : Catalan" + "\n" + \
-                         "╠❂ zh : Chinese" + "\n" + \
-                         "╠❂ zh-cn : Chinese (Mandarin/China)" + "\n" + \
-                         "╠❂ zh-tw : Chinese (Mandarin/Taiwan)" + "\n" + \
-                         "╠❂ zh-yue : Chinese (Cantonese)" + "\n" + \
-                         "╠❂ hr : Croatian" + "\n" + \
-                         "╠❂ cs : Czech" + "\n" + \
-                         "╠❂ da : Danish" + "\n" + \
-                         "╠❂ nl : Dutch" + "\n" + \
-                         "╠❂ en : English" + "\n" + \
-                         "╠❂ en-au : English (Australia)" + "\n" + \
-                         "╠❂ en-uk : English (United Kingdom)" + "\n" + \
-                         "╠❂ en-us : English (United States)" + "\n" + \
-                         "╠❂ eo : Esperanto" + "\n" + \
-                         "╠❂ fi : Finnish" + "\n" + \
-                         "╠❂ fr : French" + "\n" + \
-                         "╠❂ de : German" + "\n" + \
-                         "╠❂ el : Greek" + "\n" + \
-                         "╠❂ hi : Hindi" + "\n" + \
-                         "╠❂ hu : Hungarian" + "\n" + \
-                         "╠❂ is : Icelandic" + "\n" + \
-                         "╠❂ id : Indonesian" + "\n" + \
-                         "╠❂ it : Italian" + "\n" + \
-                         "╠❂ ja : Japanese" + "\n" + \
-                         "╠❂ km : Khmer (Cambodian)" + "\n" + \
-                         "╠❂ ko : Korean" + "\n" + \
-                         "╠❂ la : Latin" + "\n" + \
-                         "╠❂ lv : Latvian" + "\n" + \
-                         "╠❂ mk : Macedonian" + "\n" + \
-                         "╠❂ no : Norwegian" + "\n" + \
-                         "╠❂ pl : Polish" + "\n" + \
-                         "╠❂ pt : Portuguese" + "\n" + \
-                         "╠❂ ro : Romanian" + "\n" + \
-                         "╠❂ ru : Russian" + "\n" + \
-                         "╠❂ sr : Serbian" + "\n" + \
-                         "╠❂ si : Sinhala" + "\n" + \
-                         "╠❂ sk : Slovak" + "\n" + \
-                         "╠❂ es : Spanish" + "\n" + \
-                         "╠❂ es-es : Spanish (Spain)" + "\n" + \
-                         "╠❂ es-us : Spanish (United States)" + "\n" + \
-                         "╠❂ sw : Swahili" + "\n" + \
-                         "╠❂ sv : Swedish" + "\n" + \
-                         "╠❂ ta : Tamil" + "\n" + \
-                         "╠❂ th : Thai" + "\n" + \
-                         "╠❂ tr : Turkish" + "\n" + \
-                         "╠❂ uk : Ukrainian" + "\n" + \
-                         "╠❂ vi : Vietnamese" + "\n" + \
-                         "╠❂ cy : Welsh" + "\n" + \
-                         "╚══════════════┛" + "\n" + "\n\n" + \
-                          "「Contoh : say-id Pengen Anu」"
-    return helpTextToSpeech
-    
-def helplanguange():
-    helpLanguange =    "╔══════════════┓" + "\n" + \
-                       "╠⌬ ✰self protect✰    ⌬" + "\n" + \
-                       "╚══════════════┛" + "\n" + \
-                       "────┅═ই۝ई═┅────" + "\n" + \
-                       "          ʜᴇʟᴘ ᴛʀᴀɴsʟᴀᴛᴇ" + "\n" + \
-                       "────┅═ই۝ई═┅────" + "\n" + \
-                       "╔══════════════┓" + "\n" + \
-                       "╠❂ af : afrikaans" + "\n" + \
-                       "╠❂ sq : albanian" + "\n" + \
-                       "╠❂ am : amharic" + "\n" + \
-                       "╠❂ ar : arabic" + "\n" + \
-                       "╠❂ hy : armenian" + "\n" + \
-                       "╠❂ az : azerbaijani" + "\n" + \
-                       "╠❂ eu : basque" + "\n" + \
-                       "╠❂ be : belarusian" + "\n" + \
-                       "╠❂ bn : bengali" + "\n" + \
-                       "╠❂ bs : bosnian" + "\n" + \
-                       "╠❂ bg : bulgarian" + "\n" + \
-                       "╠❂ ca : catalan" + "\n" + \
-                       "╠❂ ceb : cebuano" + "\n" + \
-                       "╠❂ ny : chichewa" + "\n" + \
-                       "╠❂ zh-cn : chinese (simplified)" + "\n" + \
-                       "╠❂ zh-tw : chinese (traditional)" + "\n" + \
-                       "╠❂ co : corsican" + "\n" + \
-                       "╠❂ hr : croatian" + "\n" + \
-                       "╠❂ cs : czech" + "\n" + \
-                       "╠❂ da : danish" + "\n" + \
-                       "╠❂ nl : dutch" + "\n" + \
-                       "╠❂ en : english" + "\n" + \
-                       "╠❂ eo : esperanto" + "\n" + \
-                       "╠❂ et : estonian" + "\n" + \
-                       "╠❂ tl : filipino" + "\n" + \
-                       "╠❂ fi : finnish" + "\n" + \
-                       "╠❂ fr : french" + "\n" + \
-                       "╠❂ fy : frisian" + "\n" + \
-                       "╠❂ gl : galician" + "\n" + \
-                       "╠❂ ka : georgian" + "\n" + \
-                       "╠❂ de : german" + "\n" + \
-                       "╠❂ el : greek" + "\n" + \
-                       "╠❂ gu : gujarati" + "\n" + \
-                       "╠❂ ht : haitian creole" + "\n" + \
-                       "╠❂ ha : hausa" + "\n" + \
-                       "╠❂ haw : hawaiian" + "\n" + \
-                       "╠❂ iw : hebrew" + "\n" + \
-                       "╠❂ hi : hindi" + "\n" + \
-                       "╠❂ hmn : hmong" + "\n" + \
-                       "╠❂ hu : hungarian" + "\n" + \
-                       "╠❂ is : icelandic" + "\n" + \
-                       "╠❂ ig : igbo" + "\n" + \
-                       "╠❂ id : indonesian" + "\n" + \
-                       "╠❂ ga : irish" + "\n" + \
-                       "╠❂ it : italian" + "\n" + \
-                       "╠❂ ja : japanese" + "\n" + \
-                       "╠❂ jw : javanese" + "\n" + \
-                       "╠❂ kn : kannada" + "\n" + \
-                       "╠❂ kk : kazakh" + "\n" + \
-                       "╠❂ km : khmer" + "\n" + \
-                       "╠❂ ko : korean" + "\n" + \
-                       "╠❂ ku : kurdish (kurmanji)" + "\n" + \
-                       "╠❂ ky : kyrgyz" + "\n" + \
-                       "╠❂ lo : lao" + "\n" + \
-                       "╠❂ la : latin" + "\n" + \
-                       "╠❂ lv : latvian" + "\n" + \
-                       "╠❂ lt : lithuanian" + "\n" + \
-                       "╠❂ lb : luxembourgish" + "\n" + \
-                       "╠❂ mk : macedonian" + "\n" + \
-                       "╠❂ mg : malagasy" + "\n" + \
-                       "╠❂ ms : malay" + "\n" + \
-                       "╠❂ ml : malayalam" + "\n" + \
-                       "╠❂ mt : maltese" + "\n" + \
-                       "╠❂ mi : maori" + "\n" + \
-                       "╠❂ mr : marathi" + "\n" + \
-                       "╠❂ mn : mongolian" + "\n" + \
-                       "╠❂ my : myanmar (burmese)" + "\n" + \
-                       "╠❂ ne : nepali" + "\n" + \
-                       "╠❂ no : norwegian" + "\n" + \
-                       "╠❂ ps : pashto" + "\n" + \
-                       "╠❂ fa : persian" + "\n" + \
-                       "╠❂ pl : polish" + "\n" + \
-                       "╠❂ pt : portuguese" + "\n" + \
-                       "╠❂ pa : punjabi" + "\n" + \
-                       "╠❂ ro : romanian" + "\n" + \
-                       "╠❂ ru : russian" + "\n" + \
-                       "╠❂ sm : samoan" + "\n" + \
-                       "╠❂ gd : scots gaelic" + "\n" + \
-                       "╠❂ sr : serbian" + "\n" + \
-                       "╠❂ st : sesotho" + "\n" + \
-                       "╠❂ sn : shona" + "\n" + \
-                       "╠❂ sd : sindhi" + "\n" + \
-                       "╠❂ si : sinhala" + "\n" + \
-                       "╠❂ sk : slovak" + "\n" + \
-                       "╠❂ sl : slovenian" + "\n" + \
-                       "╠❂ so : somali" + "\n" + \
-                       "╠❂ es : spanish" + "\n" + \
-                       "╠❂ su : sundanese" + "\n" + \
-                       "╠❂ sw : swahili" + "\n" + \
-                       "╠❂ sv : swedish" + "\n" + \
-                       "╠❂ tg : tajik" + "\n" + \
-                       "╠❂ ta : tamil" + "\n" + \
-                       "╠❂ te : telugu" + "\n" + \
-                       "╠❂ th : thai" + "\n" + \
-                       "╠❂ tr : turkish" + "\n" + \
-                       "╠❂ uk : ukrainian" + "\n" + \
-                       "╠❂ ur : urdu" + "\n" + \
-                       "╠❂ uz : uzbek" + "\n" + \
-                       "╠❂ vi : vietnamese" + "\n" + \
-                       "╠❂ cy : welsh" + "\n" + \
-                       "╠❂ xh : xhosa" + "\n" + \
-                       "╠❂ yi : yiddish" + "\n" + \
-                       "╠❂ yo : yoruba" + "\n" + \
-                       "╠❂ zu : zulu" + "\n" + \
-                       "╠❂ fil : Filipino" + "\n" + \
-                       "╠❂ he : Hebrew" + "\n" + \
-                       "╚══════════════┛" + "\n" + "\n\n" + \
-                       "「Contoh : tr-id Pengen Anu」"
-    return helpLanguange
 #==============================================================================#
 def lineBot(op):
     try:
@@ -704,12 +521,12 @@ def lineBot(op):
                 elif text.lower() == 'help6':
                     socMedia = socmedia()
                     line.sendMessage(to, str(socMedia))
-                elif text.lower() == 'texttospeech':
-                    helpTextToSpeech = helptexttospeech()
-                    line.sendMessage(to, str(helpTextToSpeech))
-                elif text.lower() == 'languange':
-                    helpLanguange = helplanguange()
-                    line.sendMessage(to, str(helpLanguange))
+#                elif text.lower() == 'texttospeech':
+ #                   helpTextToSpeech = helptexttospeech()
+ #                   line.sendMessage(to, str(helpTextToSpeech))
+  #              elif text.lower() == 'languange':
+  #                  helpLanguange = helplanguange()
+  #                  line.sendMessage(to, str(helpLanguange))
 #==============================================================================#
                 elif text.lower() == 'speed':
                     start = time.time()
@@ -1962,10 +1779,16 @@ def lineBot(op):
                         ginfo = line.getGroup(receiver)
                         try:
                             line.leaveGroup(receiver)
-                            ki.leaveGroup(receiver)
-                            kk.leaveGroup(receiver)
-                            kc.leaveGroup(receiver)
-                            ke.leaveGroup(receiver)							
+			    ki1.leaveGroup(receiver)
+                            ki2.leaveGroup(receiver)
+                            ki3.leaveGroup(receiver)
+                            ki4.leaveGroup(receiver)	
+                            ki5.leaveGroup(receiver)
+                            ki6.leaveGroup(receiver)
+                            ki7.leaveGroup(receiver)
+                            ki8.leaveGroup(receiver)
+                            ki9.leaveGroup(receiver)
+                            ki10.leaveGroup(receiver)				
                         except:
                             pass
 
@@ -2079,14 +1902,26 @@ def lineBot(op):
                         line.updateGroup(group)
                         invsend = 0
                         ticket = line.reissueGroupTicket(to)
-                        ki.acceptGroupInvitationByTicket(to,format(str(ticket)))
+                        ki1.acceptGroupInvitationByTicket(to,format(str(ticket)))
                         time.sleep(0.01)
-                        kk.acceptGroupInvitationByTicket(to,format(str(ticket)))
+                        ki2.acceptGroupInvitationByTicket(to,format(str(ticket)))
                         time.sleep(0.01)
-                        kc.acceptGroupInvitationByTicket(to,format(str(ticket)))
+                        ki3.acceptGroupInvitationByTicket(to,format(str(ticket)))
                         time.sleep(0.01)
-                        ke.acceptGroupInvitationByTicket(to,format(str(ticket)))
-                        time.sleep(0.01)                        
+                        ki4.acceptGroupInvitationByTicket(to,format(str(ticket)))
+                        time.sleep(0.01)                
+			ki5.acceptGroupInvitationByTicket(to,format(str(ticket)))
+                        time.sleep(0.01)
+                        ki6.acceptGroupInvitationByTicket(to,format(str(ticket)))
+                        time.sleep(0.01)
+                        ki7.acceptGroupInvitationByTicket(to,format(str(ticket)))
+                        time.sleep(0.01)
+                        ki8.acceptGroupInvitationByTicket(to,format(str(ticket)))
+                        time.sleep(0.01)  
+			ki9.acceptGroupInvitationByTicket(to,format(str(ticket)))
+                        time.sleep(0.01)
+                        ki10.acceptGroupInvitationByTicket(to,format(str(ticket)))
+                        time.sleep(0.01)  
                         group.preventedJoinByTicket = True
                         line.updateGroup(group)
                         print ("Kicker Join")
@@ -2293,22 +2128,34 @@ def lineBot(op):
                                 pass
                                 print ("Remove Chat Kicker")
 
-                elif text.lower() == "ออก":
+                elif text.lower() == "หนีหำ":
                     if msg._from in Family:
-                        ki.leaveGroup(msg.to)
-                        kk.leaveGroup(msg.to)
-                        kc.leaveGroup(msg.to)
-                        ke.leaveGroup(msg.to)                        
+                        ki1.leaveGroup(msg.to)
+                        ki2.leaveGroup(msg.to)
+                        ki3.leaveGroup(msg.to)
+                        ki4.leaveGroup(msg.to) 
+			ki5.leaveGroup(msg.to)
+                        ki6.leaveGroup(msg.to)
+                        ki7.leaveGroup(msg.to)
+                        ki8.leaveGroup(msg.to) 
+			ki9.leaveGroup(msg.to)
+                        ki10.leaveGroup(msg.to) 
                         print ("Kicker Leave")
 
                 elif text.lower() == "leaveall":
                     if msg._from in Family:
                         gid = line.getGroupIdsJoined()
                         for i in gid:
-                            ki.leaveGroup(i)
-                            kk.leaveGroup(i)
-                            kc.leaveGroup(i)
-                            ke.leaveGroup(i)                            
+                            ki1.leaveGroup(i)
+                            ki2.leaveGroup(i)
+                            ki3.leaveGroup(i)
+                            ki4.leaveGroup(i) 
+                            ki5.leaveGroup(i)
+                            ki6.leaveGroup(i)
+                            ki7.leaveGroup(i)
+                            ki8.leaveGroup(i)
+                            ki9.leaveGroup(i) 
+                            ki10.leaveGroup(i) 
                             print ("Kicker Leave All group")
 
                 elif "myname: " in text.lower():
