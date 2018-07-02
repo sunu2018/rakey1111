@@ -787,18 +787,18 @@ def lineBot(op):
                         line.sendMessage(to, str(ret_))
                     except Exception as e:
                         line.sendMessage(msg.to, str(e))
-                elif text.lower() == 'autoadd on':
+                elif text.lower() == 'รับแอดออโต้ on':
                     settings["autoAdd"] = True
-                    line.sendMessage(to, "Autoadd enabled.")
-                elif text.lower() == 'autoadd off':
+                    line.sendMessage(to, "เปิดรับแอดออโต้ แล้ว.")
+                elif text.lower() == 'รับแอดออโต้ off':
                     settings["autoAdd"] = False
-                    line.sendMessage(to, "Autoadd disabled.")
-                elif text.lower() == 'autojoin on':
+                    line.sendMessage(to, "ปิดรับแอดออโต้ แล้ว.")
+                elif text.lower() == 'เข้าห้องออโต้ on':
                     settings["autoJoin"] = True
-                    line.sendMessage(to, "Autojoin enabled.")
-                elif text.lower() == 'autojoin off':
+                    line.sendMessage(to, "เปิดเข้าห้องออโต้ แล้ว.")
+                elif text.lower() == 'เข้าห้องออโต้ off':
                     settings["autoJoin"] = False
-                    line.sendMessage(to, "Auto Join disabled.")
+                    line.sendMessage(to, "ปิดเข้าห้องออโต้ แล้ว.")
                 elif "Gcancel:" in msg.text:
                     try:
                         strnum = msg.text.replace("Gcancel:","")
