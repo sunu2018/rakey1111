@@ -37,10 +37,10 @@ line.log("Timeline Token : " + str(line.tl.channelAccessToken))
 #ke.log("Auth Token : " + str(ke.authToken))
 #ke.log("Timeline Token : " + str(ke.tl.channelAccessToken))
 
-ki1 = LINE("EuMog9y5XK0HpLVD5NQd.1nbyMEq08x6C7rz2+Bti7q.AbZpd2NL+U67ENU7foUKRyx+rbCvL7JfxCSIgFep34E=")
-ki2 = LINE("EuEI1iUJoxtcMCdjAwXa.O9c5p841tRUgzA9d0PcAkG.BmkT3cVrFLnqV5SDsGHtV2R+Bwk4tH7HpLYcJY1FbCk=")
-ki3 = LINE("EuB2nqViXB9yVC6Hv4id.dCZhkZtrJsP18XdGxTjDlq.lfF8ng308Ftvk0pwuhDN9xyhwzsJdtF8Rc5kytYYCd4=")
-ki4 = LINE("EuzzT05VEW5hnfk4S6v3.NONcEvn2cxU/zuRhr3ZHOW.1EusstaqkeTioe+S1j8fscJMoh2+NTFjrt/yDiclAp0=")
+#ki1 = LINE("EuMog9y5XK0HpLVD5NQd.1nbyMEq08x6C7rz2+Bti7q.AbZpd2NL+U67ENU7foUKRyx+rbCvL7JfxCSIgFep34E=")
+#ki2 = LINE("EuEI1iUJoxtcMCdjAwXa.O9c5p841tRUgzA9d0PcAkG.BmkT3cVrFLnqV5SDsGHtV2R+Bwk4tH7HpLYcJY1FbCk=")
+#ki3 = LINE("EuB2nqViXB9yVC6Hv4id.dCZhkZtrJsP18XdGxTjDlq.lfF8ng308Ftvk0pwuhDN9xyhwzsJdtF8Rc5kytYYCd4=")
+#ki4 = LINE("EuzzT05VEW5hnfk4S6v3.NONcEvn2cxU/zuRhr3ZHOW.1EusstaqkeTioe+S1j8fscJMoh2+NTFjrt/yDiclAp0=")
 
 print ("Login Succes")
 
@@ -48,21 +48,21 @@ lineMID = line.profile.mid
 lineProfile = line.getProfile()
 lineSettings = line.getSettings()
 
-ki1MID = ki1.profile.mid
-ki1Profile = ki1.getProfile()
-ki1Settings = ki1.getSettings()
+#ki1MID = ki1.profile.mid
+#ki1Profile = ki1.getProfile()
+#ki1Settings = ki1.getSettings()
 
-ki2MID = ki2.profile.mid
-ki2Profile = ki2.getProfile()
-ki2Settings = ki2.getSettings()
+#ki2MID = ki2.profile.mid
+#ki2Profile = ki2.getProfile()
+#ki2Settings = ki2.getSettings()
 
-ki3MID = ki3.profile.mid
-ki3Profile = ki3.getProfile()
-ki3Settings = ki3.getSettings()
+#ki3MID = ki3.profile.mid
+#ki3Profile = ki3.getProfile()
+#ki3Settings = ki3.getSettings()
 
-ki4MID = ki4.profile.mid
-ki4Profile = ki4.getProfile()
-ki4Settings = ki4.getSettings()
+#ki4MID = ki4.profile.mid
+#ki4Profile = ki4.getProfile()
+#ki4Settings = ki4.getSettings()
 
 
 oepoll = OEPoll(ki4)
@@ -75,16 +75,16 @@ readOpen = codecs.open("read.json","r","utf-8")
 settingsOpen = codecs.open("temp.json","r","utf-8")
 read = json.load(readOpen)
 settings = json.load(settingsOpen)
-Rfu = [line,ki1,ki2,ki3,ki4]
-Exc = [ki1,ki2,ki3,ki4]
+Rfu = [line]#,ki1,ki2,ki3,ki4]
+#Exc = [ki1,ki2,ki3,ki4]
 lineMID = line.getProfile().mid
-kiMID = ki1.getProfile().mid
-kkMID = ki2.getProfile().mid
-kcMID = ki3.getProfile().mid
-kcMID = ki4.getProfile().mid
+#ki1MID = ki1.getProfile().mid
+#ki2MID = ki2.getProfile().mid
+#ki3MID = ki3.getProfile().mid
+#ki4MID = ki4.getProfile().mid
 bot1 = line.getProfile().mid
-RfuBot=[lineMID,ki1MID,ki2MID,ki3MID,ki4MID]
-Family=["u9ed31efc986199adedb27386c9b1f458",lineMID,ki1MID,ki2MID,ki3MID,ki4MID]
+RfuBot=[lineMID]#,ki1MID,ki2MID,ki3MID,ki4MID]
+Family=["u9ed31efc986199adedb27386c9b1f458",lineMID]#,ki1MID,ki2MID,ki3MID,ki4MID]
 admin=['u9ed31efc986199adedb27386c9b1f458',lineMID]
 RfuFamily = RfuBot + Family
 
