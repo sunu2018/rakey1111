@@ -1819,57 +1819,57 @@ def lineBot(op):
                     t1 = "\xf4\x80\xb0\x82\xf4\x80\xb0\x82\xf4\x80\xb0\x82\xf4\x80\xb0\x82\xf4\x80\xa0\x81\xf4\x80\xa0\x81\xf4\x80\xa0\x81"
                     t2 = "\xf4\x80\x82\xb3\xf4\x8f\xbf\xbf"
                     line.sendMessage(msg.to, t1 + txt + t2)						
-                elif msg.text in ["บอท1ลบสิริ"]:
+                elif msg.text in ["K1 Siri"]:
                     if msg.toType == 2:
                         print("Kick Siri")
-                        x = ki.getGroup(msg.to)
-                        if kiMID in [i.mid for i in x.members]:
+                        x = ki1.getGroup(msg.to)
+                        if ki1MID in [i.mid for i in x.members]:
                             sirilist = [i.mid for i in x.members if any(word in i.displayName for word in ["Doctor.A","Eliza","Parry","Rakko","しりちゃん"]) or i.displayName.isdigit()]
                             if sirilist == []:
-                                ki.sendText(msg.to,"ไม่พบสิริอยู่ในกลุ่ม.")
+                                ki1.sendText(msg.to,"ไม่พบสิริอยู่ในกลุ่ม.")
                             for target in sirilist:
                                 try:
-                                    ki.kickoutFromGroup(msg.to,[target])
+                                    ki1.kickoutFromGroup(msg.to,[target])
                                 except:
                                     pass
 										
-                elif msg.text in ["บอท2ลบสิริ"]:
+                elif msg.text in ["K2 Siri"]:
                     if msg.toType == 2:
                         print("Kick Siri")
-                        x = kk.getGroup(msg.to)
-                        if kkMID in [i.mid for i in x.members]:
+                        x = ki2.getGroup(msg.to)
+                        if ki2MID in [i.mid for i in x.members]:
                             sirilist = [i.mid for i in x.members if any(word in i.displayName for word in ["Doctor.A","Eliza","Parry","Rakko","しりちゃん"]) or i.displayName.isdigit()]
                             if sirilist == []:
-                                kk.sendText(msg.to,"ไม่พบสิริอยู่ในกลุ่ม.")
+                                ki2.sendText(msg.to,"ไม่พบสิริอยู่ในกลุ่ม.")
                             for target in sirilist:
                                 try:
-                                    kk.kickoutFromGroup(msg.to,[target])
+                                    ki2.kickoutFromGroup(msg.to,[target])
                                 except:
                                     pass
-                elif msg.text in ["บอท3ลบสิริ"]:
+                elif msg.text in ["K3 Siri"]:
                     if msg.toType == 2:
                         print("Kick Siri")
-                        x = kc.getGroup(msg.to)
-                        if kcMID in [i.mid for i in x.members]:
+                        x = ki3.getGroup(msg.to)
+                        if ki3MID in [i.mid for i in x.members]:
                             sirilist = [i.mid for i in x.members if any(word in i.displayName for word in ["Doctor.A","Eliza","Parry","Rakko","しりちゃん"]) or i.displayName.isdigit()]
                             if sirilist == []:
-                                kc.sendText(msg.to,"ไม่พบสิริอยู่ในกลุ่ม.")
+                                ki3.sendText(msg.to,"ไม่พบสิริอยู่ในกลุ่ม.")
                             for target in sirilist:
                                 try:
-                                    kc.kickoutFromGroup(msg.to,[target])
+                                    ki3.kickoutFromGroup(msg.to,[target])
                                 except:
                                     pass
-                elif msg.text in ["บอท4ลบสิริ"]:
+                elif msg.text in ["K4 Siri"]:
                     if msg.toType == 2:
                         print("Kick Siri")
-                        x = ke.getGroup(msg.to)
-                        if kcMID in [i.mid for i in x.members]:
+                        x = ki4.getGroup(msg.to)
+                        if ki4MID in [i.mid for i in x.members]:
                             sirilist = [i.mid for i in x.members if any(word in i.displayName for word in ["Doctor.A","Eliza","Parry","Rakko","しりちゃん"]) or i.displayName.isdigit()]
                             if sirilist == []:
-                                ke.sendText(msg.to,"ไม่พบสิริอยู่ในกลุ่ม.")
+                                ki4.sendText(msg.to,"ไม่พบสิริอยู่ในกลุ่ม.")
                             for target in sirilist:
                                 try:
-                                    ke.kickoutFromGroup(msg.to,[target])
+                                    ki4.kickoutFromGroup(msg.to,[target])
                                 except:
                                     pass									
                 elif msg.text in ["Inviteuser"]:
@@ -1887,7 +1887,7 @@ def lineBot(op):
                         gMembMids = [contact.mid for contact in group.invitee]
                         for i in gMembMids:
                             random.choice(Exc).cancelGroupInvitation(msg.to,[i])
-                elif msg.text.lower() == "ออน":
+                elif msg.text.lower() == "on":
                     line.sendText(msg.to,(str(datetime.datetime.now() - start_runtime)[:-7].split(" days, ")[0]+" วัน "+str(datetime.datetime.now() - start_runtime)[:-7].split(" days, ")[1].split(":")[0]+" ชั่วโมง " if "days" in str(datetime.datetime.now() - start_runtime) else str(datetime.datetime.now() - start_runtime)[:-7].split(" day, ")[0]+" วัน "+str(datetime.datetime.now() - start_runtime)[:-7].split(" day, ")[1].split(":")[0]+" ชั่วโมง " if "day" in str(datetime.datetime.now() - start_runtime) else str(datetime.datetime.now() - start_runtime)[:-7].split(":")[0]+" ชั่วโมง ")+str(datetime.datetime.now() - start_runtime)[:-7].split(":")[1]+" นาที "+str(datetime.datetime.now() - start_runtime)[:-7].split(":")[2]+" วินาที")
 #=============COMMAND KICKER===========================#
                 elif msg.text in ["cb"]:
@@ -1909,19 +1909,7 @@ def lineBot(op):
                         ki3.acceptGroupInvitationByTicket(to,format(str(ticket)))
                         time.sleep(0.01)
                         ki4.acceptGroupInvitationByTicket(to,format(str(ticket)))
-                        time.sleep(0.01)                
-			ki5.acceptGroupInvitationByTicket(to,format(str(ticket)))
-                        time.sleep(0.01)
-                        ki6.acceptGroupInvitationByTicket(to,format(str(ticket)))
-                        time.sleep(0.01)
-                        ki7.acceptGroupInvitationByTicket(to,format(str(ticket)))
-                        time.sleep(0.01)
-                        ki8.acceptGroupInvitationByTicket(to,format(str(ticket)))
-                        time.sleep(0.01)  
-			ki9.acceptGroupInvitationByTicket(to,format(str(ticket)))
-                        time.sleep(0.01)
-                        ki10.acceptGroupInvitationByTicket(to,format(str(ticket)))
-                        time.sleep(0.01)  
+                        time.sleep(0.01)                 
                         group.preventedJoinByTicket = True
                         line.updateGroup(group)
                         print ("Kicker Join")
@@ -1960,10 +1948,10 @@ def lineBot(op):
                            targets.append(x["M"])
                        for target in targets:
                            try:
-                               ki.kickoutFromGroup(msg.to,[target])           
+                               ki1.kickoutFromGroup(msg.to,[target])           
                                print ("K1 Kick User")
                            except:
-                               ki.sendMessage(msg.to,"Limit kaka 😫")                               
+                               ki1.sendMessage(msg.to,"Limit kaka 😫")                               
 
                 elif 'k2 kik' in text.lower():
                        targets = []
@@ -1973,10 +1961,10 @@ def lineBot(op):
                            targets.append(x["M"])
                        for target in targets:
                            try:
-                               kk.kickoutFromGroup(msg.to,[target])
+                               ki2.kickoutFromGroup(msg.to,[target])
                                print ("K2 kick user")
                            except:
-                               kk.sendMessage(msg.to,"Limit kaka 😫")                              
+                               ki2.sendMessage(msg.to,"Limit kaka 😫")                              
 
                 elif 'k3 kick' in text.lower():
                        targets = []
@@ -1986,10 +1974,10 @@ def lineBot(op):
                            targets.append(x["M"])
                        for target in targets:
                            try:
-                               kc.kickoutFromGroup(msg.to,[target])
+                               ki3.kickoutFromGroup(msg.to,[target])
                                print ("K3 kick user")
                            except:
-                               kc.sendMessage(msg.to,"Limit kaka 😫")                              
+                               ki3.sendMessage(msg.to,"Limit kaka 😫")                              
 
                 elif 'k4 kick' in text.lower():
                        targets = []
@@ -1999,10 +1987,10 @@ def lineBot(op):
                            targets.append(x["M"])
                        for target in targets:
                            try:
-                               ke.kickoutFromGroup(msg.to,[target])
+                               ki4.kickoutFromGroup(msg.to,[target])
                                print ("K3 kick user")
                            except:
-                               ke.sendMessage(msg.to,"Limit kaka 😫")                              
+                               ki4.sendMessage(msg.to,"Limit kaka 😫")                              
                                
                 elif 'invite' in text.lower():
                        targets = []
@@ -2025,11 +2013,11 @@ def lineBot(op):
                            targets.append(x["M"])
                        for target in targets:
                            try:
-                               ki.inviteIntoGroup(msg.to,[target])
-                               ki.sendMessage(receiver, "Type👉 Invite Succes")
+                               ki1.inviteIntoGroup(msg.to,[target])
+                               ki1.sendMessage(receiver, "Type👉 Invite Succes")
                                print ("R1 invite User")
                            except:
-                               ki.sendMessage(msg.to,"Type👉 Limit Invite")                               
+                               ki1.sendMessage(msg.to,"Type👉 Limit Invite")                               
 
                 elif 'k2 inv' in text.lower():
                        targets = []
@@ -2039,11 +2027,11 @@ def lineBot(op):
                            targets.append(x["M"])
                        for target in targets:
                            try:
-                               kk.inviteIntoGroup(msg.to,[target])
-                               kk.sendMessage(receiver, "Type👉 Invite Succes")
+                               ki2.inviteIntoGroup(msg.to,[target])
+                               ki2.sendMessage(receiver, "Type👉 Invite Succes")
                                ("R2 invite User")
                            except:
-                               kk.sendMessage(msg.to,"Type👉 Limit Invite")                               
+                               ki2.sendMessage(msg.to,"Type👉 Limit Invite")                               
 
                 elif 'k3 getinvite' in text.lower():
                        targets = []
@@ -2053,11 +2041,11 @@ def lineBot(op):
                            targets.append(x["M"])
                        for target in targets:
                            try:
-                               kc.inviteIntoGroup(msg.to,[target])
-                               kc.sendMessage(receiver, "Type👉 Invite Succes")
+                               ki3.inviteIntoGroup(msg.to,[target])
+                               ki3.sendMessage(receiver, "Type👉 Invite Succes")
                                ("R3 invite User")
                            except:
-                               kc.sendMessage(msg.to,"Type👉 Limit Invite")                               
+                               ki3.sendMessage(msg.to,"Type👉 Limit Invite")                               
 
                 elif 'k4 getinvite' in text.lower():
                        targets = []
@@ -2067,11 +2055,11 @@ def lineBot(op):
                            targets.append(x["M"])
                        for target in targets:
                            try:
-                               ke.inviteIntoGroup(msg.to,[target])
-                               ke.sendMessage(receiver, "Type👉 Invite Succes")
+                               ki4.inviteIntoGroup(msg.to,[target])
+                               ki4.sendMessage(receiver, "Type👉 Invite Succes")
                                ("R4 invite User")
                            except:
-                               ke.sendMessage(msg.to,"Type👉 Limit Invite")                               
+                               ki4.sendMessage(msg.to,"Type👉 Limit Invite")                               
 
                 elif "Cleanse" in msg.text:
                 	if msg.toType == 2:
@@ -2088,7 +2076,7 @@ def lineBot(op):
                              for target in targets:
                              	if not target in Rfu:
                                      try:
-                                         klist=[line,ki,kk,kc,ke]
+                                         klist=[line,ki1,ki2,ki3,ki4]
                                          kicker=random.choice(klist)
                                          kicker.kickoutFromGroup(receiver,[target])
                                          print((receiver,[g.mid]))
@@ -2108,7 +2096,7 @@ def lineBot(op):
                          else:
                              for jj in matched_list:
                                  try:
-                                     klist=[line,ki,kk,kc,ke]
+                                     klist=[line,ki1,ki2,ki3,ki4]
                                      kicker=random.choice(klist)
                                      kicker.kickoutFromGroup(receiver,[jj])
                                      print((receiver,[jj]))
@@ -2119,10 +2107,10 @@ def lineBot(op):
                 elif text.lower() == "removechat":
                         if msg._from in Family:
                             try:
-                                ki.removeAllMessages(op.param2)
-                                kk.removeAllMessages(op.param2)
-                                kc.removeAllMessages(op.param2)
-                                ke.removeAllMessages(op.param2)                                
+                                ki1.removeAllMessages(op.param2)
+                                ki2.removeAllMessages(op.param2)
+                                ki3.removeAllMessages(op.param2)
+                                ki4.removeAllMessages(op.param2)                                
                                 line.sendMessage(msg.to,"Remove chat Kicker success....")
                             except:
                                 pass
@@ -2134,12 +2122,6 @@ def lineBot(op):
                         ki2.leaveGroup(msg.to)
                         ki3.leaveGroup(msg.to)
                         ki4.leaveGroup(msg.to) 
-			ki5.leaveGroup(msg.to)
-                        ki6.leaveGroup(msg.to)
-                        ki7.leaveGroup(msg.to)
-                        ki8.leaveGroup(msg.to) 
-			ki9.leaveGroup(msg.to)
-                        ki10.leaveGroup(msg.to) 
                         print ("Kicker Leave")
 
                 elif text.lower() == "leaveall":
@@ -2150,12 +2132,12 @@ def lineBot(op):
                             ki2.leaveGroup(i)
                             ki3.leaveGroup(i)
                             ki4.leaveGroup(i) 
-                            ki5.leaveGroup(i)
-                            ki6.leaveGroup(i)
-                            ki7.leaveGroup(i)
-                            ki8.leaveGroup(i)
-                            ki9.leaveGroup(i) 
-                            ki10.leaveGroup(i) 
+                           # ki5.leaveGroup(i)
+                            #ki6.leaveGroup(i)
+                           # ki7.leaveGroup(i)
+                           # ki8.leaveGroup(i)
+                           # ki9.leaveGroup(i) 
+                            #ki10.leaveGroup(i) 
                             print ("Kicker Leave All group")
 
                 elif "myname: " in text.lower():
@@ -2182,18 +2164,18 @@ def lineBot(op):
                     if msg._from in Family:
                         proses = text.split(": ")
                         string = text.replace(proses[0] + ": ","")
-                        profile_A = ki.getProfile()
-                        profile_B = kk.getProfile()
-                        profile_C = kc.getProfile()
-                        profile_D = ke.getProfile()                        
+                        profile_A = ki1.getProfile()
+                        profile_B = ki2.getProfile()
+                        profile_C = ki3.getProfile()
+                        profile_D = ki4.getProfile()                        
                         profile_A.displayName = string
                         profile_B.displayName = string
                         profile_C.displayName = string
                         profile_D.displayName = string                        
-                        ki.updateProfile(profile_A)
-                        kk.updateProfile(profile_B)
-                        kc.updateProfile(profile_C)
-                        ke.updateProfile(profile_D)                        
+                        ki1.updateProfile(profile_A)
+                        ki2.updateProfile(profile_B)
+                        ki3.updateProfile(profile_C)
+                        ki4.updateProfile(profile_D)                        
                         line.sendMessage(msg.to,"Update Name All Kicker to : " + string)
                         print ("Update Name All Kicker")
 
@@ -2201,42 +2183,42 @@ def lineBot(op):
                     if msg._from in Family:
                         proses = text.split(": ")
                         string = text.replace(proses[0] + ": ","")
-                        profile_A = ki.getProfile()
-                        profile_B = kk.getProfile()
-                        profile_C = kc.getProfile()
-                        profile_D = kc.getProfile()                        
+                        profile_A = ki1.getProfile()
+                        profile_B = ki2.getProfile()
+                        profile_C = ki3.getProfile()
+                        profile_D = ki4.getProfile()                        
                         profile_A.statusMessage = string
                         profile_B.statusMessage = string
                         profile_C.statusMessage = string
                         profile_D.statusMessage = string                        
-                        ki.updateProfile(profile_A)
-                        kk.updateProfile(profile_B)
-                        kc.updateProfile(profile_C)
-                        ke.updateProfile(profile_D)                        
+                        ki1.updateProfile(profile_A)
+                        ki2.updateProfile(profile_B)
+                        ki3.updateProfile(profile_C)
+                        ki4.updateProfile(profile_D)                        
                         line.sendMessage(msg.to,"Update Bio All Kicker to : " + string)
                         print ("Update Bio All Kicker")
 
                 elif text.lower() == "รายงาน":
                     if msg._from in Family:
-                        profile = ki.getProfile()
+                        profile = ki1.getProfile()
                         text = profile.displayName + "\nรายงานตัว"
-                        ki.sendMessage(to, text)                                
-                        profile = kk.getProfile()
+                        ki1.sendMessage(to, text)                                
+                        profile = ki2.getProfile()
                         text = profile.displayName + "\nรายงานตัว"
-                        kk.sendMessage(to, text)                                
-                        profile = kc.getProfile()
+                        ki2.sendMessage(to, text)                                
+                        profile = ki3.getProfile()
                         text = profile.displayName + "\nรายงานตัว"
-                        kc.sendMessage(to, text)
-                        profile = ke.getProfile()                        
+                        ki3.sendMessage(to, text)
+                        profile = ki4.getProfile()                        
                         text = profile.displayName + "\nรายงานตัว"
-                        ke.sendMessage(to, text)                        
+                        ki4.sendMessage(to, text)                        
                         print ("Kicker Respon")
 
                 elif msg.text in ["Bot?"]:
-                    ki.sendMessage(msg.to,"✰ɢʜᴏsᴛ ᴛᴇᴀᴍ✰")
-                    kk.sendMessage(msg.to,"✰ɢʜᴏsᴛ ᴛᴇᴀᴍ✰2")
-                    kc.sendMessage(msg.to,"✰ɢʜᴏsᴛ ᴛᴇᴀᴍ✰3")
-                    ke.sendMessage(msg.to,"✰ɢʜᴏsᴛ ᴛᴇᴀᴍ✰4")    
+                    ki1.sendMessage(msg.to,"✰ɢʜᴏsᴛ ᴛᴇᴀᴍ✰")
+                    ki2.sendMessage(msg.to,"✰ɢʜᴏsᴛ ᴛᴇᴀᴍ✰2")
+                    ki3.sendMessage(msg.to,"✰ɢʜᴏsᴛ ᴛᴇᴀᴍ✰3")
+                    ki4.sendMessage(msg.to,"✰ɢʜᴏsᴛ ᴛᴇᴀᴍ✰4")    
                 elif msg.text.lower().startswith("bitcoin"):
                    search = msg.text.split("bitcoin")
                    with requests.session() as web:
@@ -2571,7 +2553,7 @@ def lineBot(op):
                             if settings["lang"] == "JP":
                                 line.sendMessage(to,"ปิดข้อความต้อนรับมีคนสมาชิกออกกลุ่ม   ")
 
-                elif text.lower() == '/ลบรัน':
+                elif text.lower() == 'ลบรัน':
                     gid = line.getGroupIdsInvited()
                     start = time.time()
                     for i in gid:
@@ -2693,21 +2675,21 @@ def lineBot(op):
             if op.param3 in lineMID:
               if op.param2 not in Family:
                 try:
-                  G = ki.getGroup(op.param1)
-                  G = kk.getGroup(op.param1)
-                  ki.kickoutFromGroup(op.param1,[op.param2])
+                  G = ki1.getGroup(op.param1)
+                  G = ki2.getGroup(op.param1)
+                  ki1.kickoutFromGroup(op.param1,[op.param2])
                   G.preventedJoinByTicket = False
-                  kk.updateGroup(G)
-                  ticket = kk.reissueGroupTicket(op.param1)
+                  ki2.updateGroup(G)
+                  ticket = ki2.reissueGroupTicket(op.param1)
                   line.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
                   time.sleep(0.01)
-                  ki.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
+                  ki1.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
                   time.sleep(0.01)
-                  kk.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
+                  ki2.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
                   time.sleep(0.01)
-                  kc.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
+                  ki3.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
                   time.sleep(0.01)
-                  ke.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
+                  ki4.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
                   time.sleep(0.01)                  
                   G.preventedJoinByTicket = True
                   line.updateGroup(G)
@@ -2722,13 +2704,13 @@ def lineBot(op):
                   ticket = random.choice(Rfu).reissueGroupTicket(op.param1)
                   line.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
                   time.sleep(0.01)
-                  ki.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
+                  ki1.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
                   time.sleep(0.01)
-                  kk.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
+                  ki2.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
                   time.sleep(0.01)
-                  kc.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
+                  ki3.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
                   time.sleep(0.01)
-                  ke.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
+                  ki4.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
                   time.sleep(0.01)                  
                   G.preventedJoinByTicket = True
                   random.choice(Rfu).updateGroup(G)
@@ -2736,27 +2718,27 @@ def lineBot(op):
                   f=codecs.open('st2__b.json','w','utf-8')
                   json.dump(settings["blacklist"], f, sort_keys=True, indent=4,ensure_ascii=False)
 
-            if op.param3 in kiMID:
+            if op.param3 in ki1MID:
               if op.param2 not in Family:
                 try:
-                  G = kk.getGroup(op.param1)
-                  G = kc.getGroup(op.param1)
-                  kk.kickoutFromGroup(op.param1,[op.param2])
+                  G = ki2.getGroup(op.param1)
+                  G = ki3.getGroup(op.param1)
+                  ki2.kickoutFromGroup(op.param1,[op.param2])
                   G.preventedJoinByTicket = False
-                  kc.updateGroup(G)
-                  ticket = kc.reissueGroupTicket(op.param1)
-                  ki.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
+                  ki3.updateGroup(G)
+                  ticket = ki3.reissueGroupTicket(op.param1)
+                  ki1.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
                   time.sleep(0.01)
                   line.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
                   time.sleep(0.01)
-                  kk.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
+                  ki2.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
                   time.sleep(0.01)
-                  kc.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
+                  ki3.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
                   time.sleep(0.01)
-                  ke.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
+                  ki4.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
                   time.sleep(0.01)                  
                   G.preventedJoinByTicket = True
-                  kk.updateGroup(G)
+                  ki2.updateGroup(G)
                   settings["blacklist"][op.param2] = True
                   f=codecs.open('st2__b.json','w','utf-8')
                   json.dump(settings["blacklist"], f, sort_keys=True, indent=4,ensure_ascii=False)
@@ -2764,35 +2746,35 @@ def lineBot(op):
                   G = random.choice(Rfu).getGroup(op.param1) 
                   random.choice(Rfu).kickoutFromGroup(op.param1,[op.param2])
                   G.preventedJoinByTicket = False
-                  kk.updateGroup(G)
+                  ki2.updateGroup(G)
                   ticket = random.choice(Rfu).reissueGroupTicket(op.param1)
-                  ki.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
+                  ki1.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
                   time.sleep(0.01)
                   line.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
                   time.sleep(0.01)
-                  kk.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
+                  ki2.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
                   time.sleep(0.01)
-                  kc.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
+                  ki3.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
                   time.sleep(0.01)
                   G.preventedJoinByTicket = True
-                  ki.updateGroup(G)
+                  ki1.updateGroup(G)
                   settings["blacklist"][op.param2] = True
                   f=codecs.open('st2__b.json','w','utf-8')
                   json.dump(settings["blacklist"], f, sort_keys=True, indent=4,ensure_ascii=False)
                   
-            if op.param3 in kkMID:
+            if op.param3 in ki2MID:
               if op.param2 not in Family:
                 try:
-                  G = kc.getGroup(op.param1)
-                  G = ki.getGroup(op.param1)
-                  kc.kickoutFromGroup(op.param1,[op.param2])
+                  G = ki3.getGroup(op.param1)
+                  G = ki1.getGroup(op.param1)
+                  ki3.kickoutFromGroup(op.param1,[op.param2])
                   G.preventedJoinByTicket = False
-                  kc.updateGroup(G)
-                  ticket = ki.reissueGroupTicket(op.param1)
-                  kk.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
+                  ki3.updateGroup(G)
+                  ticket = ki1.reissueGroupTicket(op.param1)
+                  ki2.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
                   time.sleep(0.01)
                   G.preventedJoinByTicket = True
-                  kk.updateGroup(G)
+                  ki2.updateGroup(G)
                   settings["blacklist"][op.param2] = True
                   f=codecs.open('st2__b.json','w','utf-8')
                   json.dump(settings["blacklist"], f, sort_keys=True, indent=4,ensure_ascii=False)
@@ -2802,7 +2784,7 @@ def lineBot(op):
                   G.preventedJoinByTicket = False
                   random.choice(Rfu).updateGroup(G)
                   ticket = random.choice(Rfu).reissueGroupTicket(op.param1)
-                  kk.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
+                  ki2.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
                   time.sleep(0.01)
                   G.preventedJoinByTicket = True
                   random.choice(Rfu).updateGroup(G)
@@ -2810,19 +2792,19 @@ def lineBot(op):
                   f=codecs.open('st2__b.json','w','utf-8')
                   json.dump(settings["blacklist"], f, sort_keys=True, indent=4,ensure_ascii=False)
                   
-            if op.param3 in kcMID:
+            if op.param3 in ki3MID:
               if op.param2 not in Family:
                 try:
-                  G = kk.getGroup(op.param1)
-                  G = ke.getGroup(op.param1)
-                  ki.kickoutFromGroup(op.param1,[op.param2])
+                  G = ki2.getGroup(op.param1)
+                  G = ki4.getGroup(op.param1)
+                  ki1.kickoutFromGroup(op.param1,[op.param2])
                   G.preventedJoinByTicket = False
-                  ki.updateGroup(G)
-                  ticket = ki.reissueGroupTicket(op.param1)
-                  kc.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
+                  ki1.updateGroup(G)
+                  ticket = ki1.reissueGroupTicket(op.param1)
+                  ki3.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
                   time.sleep(0.01)
                   G.preventedJoinByTicket = True
-                  kc.updateGroup(G)
+                  ki3.updateGroup(G)
                   settings["blacklist"][op.param2] = True
                   f=codecs.open('st2__b.json','w','utf-8')
                   json.dump(settings["blacklist"], f, sort_keys=True, indent=4,ensure_ascii=False)
@@ -2832,7 +2814,7 @@ def lineBot(op):
                   G.preventedJoinByTicket = False
                   random.choice(Rfu).updateGroup(G)
                   ticket = random.choice(Rfu).reissueGroupTicket(op.param1)
-                  kc.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
+                  ki3.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
                   time.sleep(0.01)
                   G.preventedJoinByTicket = True
                   random.choice(Rfu).updateGroup(G)
@@ -2840,19 +2822,19 @@ def lineBot(op):
                   f=codecs.open('st2__b.json','w','utf-8')
                   json.dump(settings["blacklist"], f, sort_keys=True, indent=4,ensure_ascii=False)
 
-            if op.param3 in keMID:
+            if op.param3 in ki4MID:
               if op.param2 not in Family:
                 try:
-                  G = ki.getGroup(op.param1)
-                  G = kc.getGroup(op.param1)
-                  ki.kickoutFromGroup(op.param1,[op.param2])
+                  G = ki1.getGroup(op.param1)
+                  G = ki3.getGroup(op.param1)
+                  ki1.kickoutFromGroup(op.param1,[op.param2])
                   G.preventedJoinByTicket = False
-                  ki.updateGroup(G)
-                  ticket = ki.reissueGroupTicket(op.param1)
-                  ke.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
+                  ki1.updateGroup(G)
+                  ticket = ki1.reissueGroupTicket(op.param1)
+                  ki4.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
                   time.sleep(0.01)
                   G.preventedJoinByTicket = True
-                  ke.updateGroup(G)
+                  ki4.updateGroup(G)
                   settings["blacklist"][op.param2] = True
                   f=codecs.open('st2__b.json','w','utf-8')
                   json.dump(settings["blacklist"], f, sort_keys=True, indent=4,ensure_ascii=False)
@@ -2862,7 +2844,7 @@ def lineBot(op):
                   G.preventedJoinByTicket = False
                   random.choice(Rfu).updateGroup(G)
                   ticket = random.choice(Rfu).reissueGroupTicket(op.param1)
-                  ke.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
+                  ki4.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
                   time.sleep(0.01)
                   G.preventedJoinByTicket = True
                   random.choice(Rfu).updateGroup(G)
@@ -2876,205 +2858,205 @@ def lineBot(op):
         if op.type == 22:
             if settings['leaveRoom'] == True:
                 line.leaveRoom(op.param1)
-                ki.leaveRoom(op.param1)
-                kk.leaveRoom(op.param1)
-                kc.leaveRoom(op.param1)
-                ke.leaveRoom(op.param1)                
+                ki1.leaveRoom(op.param1)
+                ki2.leaveRoom(op.param1)
+                ki3.leaveRoom(op.param1)
+                ki4.leaveRoom(op.param1)                
         if op.type == 24:
             if settings['leaveRoom'] == True:
                 line.leaveRoom(op.param1)
-                ki.leaveRoom(op.param1)
-                kk.leaveRoom(op.param1)
-                kc.leaveRoom(op.param1)
-                ke.leaveRoom(op.param1)                
+                ki1.leaveRoom(op.param1)
+                ki2.leaveRoom(op.param1)
+                ki3.leaveRoom(op.param1)
+                ki4.leaveRoom(op.param1)                
 #==============================================================================#
         if op.type == 19:
             try:
                 if op.param3 in lineMID:
-                    if op.param2 in kiMID:
-                        G = ki.getGroup(op.param1)
+                    if op.param2 in ki1MID:
+                        G = ki1.getGroup(op.param1)
                         G.preventedJoinByTicket = False
-                        ki.updateGroup(G)
-                        ticket = ki.reissueGroupTicket(op.param1)
+                        ki1.updateGroup(G)
+                        ticket = ki1.reissueGroupTicket(op.param1)
                         line.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
                         time.sleep(0.0001)
-                        ki.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
+                        ki1.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
                         time.sleep(0.0001)
-                        kk.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
+                        ki2.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
                         time.sleep(0.0001)
-                        kc.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
+                        ki3.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
                         time.sleep(0.0001)
-                        ke.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
+                        ki4.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
                         time.sleep(0.0001)						
                         G.preventedJoinByTicket = True
                         line.updateGroup(G)
                     else:
-                        G = ki.getGroup(op.param1)                                                
+                        G = ki1.getGroup(op.param1)                                                
                         random.choice(Rfu).kickoutFromGroup(op.param1,[op.param2])
                         G.preventedJoinByTicket = False
-                        ki.updateGroup(G)
-                        ticket = ki.reissueGroupTicket(op.param1)
+                        ki1.updateGroup(G)
+                        ticket = ki1.reissueGroupTicket(op.param1)
                         line.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
                         time.sleep(0.0001)
-                        ki.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
+                        ki1.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
                         time.sleep(0.0001)
-                        kk.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
+                        ki2.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
                         time.sleep(0.0001)
-                        kc.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
+                        ki3.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
                         time.sleep(0.0001)
-                        ke.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
+                        ki4.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
                         time.sleep(0.0001)						
                         G.preventedJoinByTicket = True
-                        ki.updateGroup(G)
+                        ki1.updateGroup(G)
                         settings["blacklist"][op.param2] = True                       
 
-                elif op.param3 in kiMID:
+                elif op.param3 in ki1MID:
                     if op.param2 in lineMID:
-                        G = kk.getGroup(op.param1)
+                        G = ki2.getGroup(op.param1)
                         G.preventedJoinByTicket = False
-                        kk.updateGroup(G)
-                        ticket = kk.reissueGroupTicket(op.param1)
+                        ki2.updateGroup(G)
+                        ticket = ki2.reissueGroupTicket(op.param1)
                         line.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
                         time.sleep(0.0001)
-                        ki.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
+                        ki1.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
                         time.sleep(0.0001)
-                        kk.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
+                        ki2.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
                         time.sleep(0.0001)
-                        kc.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
+                        ki3.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
                         time.sleep(0.0001)
-                        ke.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
+                        ki4.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
                         time.sleep(0.0001)						
                         G.preventedJoinByTicket = True
-                        kk.updateGroup(G)
+                        ki2.updateGroup(G)
                     else:
-                        G = kk.getGroup(op.param1)
+                        G = ki2.getGroup(op.param1)
                         random.choice(Rfu).kickoutFromGroup(op.param1,[op.param2])
                         G.preventedJoinByTicket = False
-                        kk.updateGroup(G)
-                        ticket = kk.reissueGroupTicket(op.param1)
+                        ki2.updateGroup(G)
+                        ticket = ki2.reissueGroupTicket(op.param1)
                         line.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
                         time.sleep(0.0001)
-                        ki.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
+                        ki1.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
                         time.sleep(0.0001)
-                        kk.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
+                        ki2.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
                         time.sleep(0.0001)
-                        kc.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
+                        ki3.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
                         time.sleep(0.0001)
-                        ke.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
+                        ki4.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
                         time.sleep(0.0001)						
                         G.preventedJoinByTicket = True
-                        ki.updateGroup(G)
+                        ki1.updateGroup(G)
                         settings["blacklist"][op.param2] = True
 
-                elif op.param3 in kkMID:
-                    if op.param2 in kiMID:
-                        G = ki.getGroup(op.param1)
+                elif op.param3 in ki2MID:
+                    if op.param2 in ki1MID:
+                        G = ki1.getGroup(op.param1)
                         G.preventedJoinByTicket = False
-                        ki.updateGroup(G)
-                        ticket = ki.reissueGroupTicket(op.param1)
-                        kk.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
+                        ki1.updateGroup(G)
+                        ticket = ki1.reissueGroupTicket(op.param1)
+                        ki2.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
                         time.sleep(0.0001)
                         line.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
                         time.sleep(0.0001)
-                        ki.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
+                        ki1.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
                         time.sleep(0.0001)
-                        kc.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
+                        ki3.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
                         time.sleep(0.0001)
-                        ke.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
+                        ki4.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
                         time.sleep(0.0001)						
                         G.preventedJoinByTicket = True
-                        ki.updateGroup(G)
+                        ki1.updateGroup(G)
                     else:
-                        G = ki.getGroup(op.param1)
+                        G = ki1.getGroup(op.param1)
                         random.choice(Rfu).kickoutFromGroup(op.param1,[op.param2])
                         G.preventedJoinByTicket = False
-                        ki.updateGroup(G)
-                        ticket = ki.reissueGroupTicket(op.param1)
-                        kk.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
+                        ki1.updateGroup(G)
+                        ticket = ki1.reissueGroupTicket(op.param1)
+                        ki2.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
                         time.sleep(0.0001)
                         line.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
                         time.sleep(0.0001)
-                        ki.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
+                        ki1.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
                         time.sleep(0.0001)
-                        kc.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
+                        ki3.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
                         time.sleep(0.0001)
                         G.preventedJoinByTicket = True
-                        ki.updateGroup(G)
+                        ki1.updateGroup(G)
                         settings["blacklist"][op.param2] = True
 
-                elif op.param3 in kcMID:
-                    if op.param2 in kkMID:
-                        G = kk.getGroup(op.param1)
+                elif op.param3 in ki3MID:
+                    if op.param2 in ki2MID:
+                        G = ki2.getGroup(op.param1)
                         G.preventedJoinByTicket = False
-                        kk.updateGroup(G)
-                        ticket = kk.reissueGroupTicket(op.param1)
-                        kc.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
+                        ki2.updateGroup(G)
+                        ticket = ki2.reissueGroupTicket(op.param1)
+                        ki3.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
                         time.sleep(0.0001)
                         line.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
                         time.sleep(0.0001)
-                        ki.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
+                        ki1.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
                         time.sleep(0.0001)
-                        kk.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
+                        ki2.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
                         time.sleep(0.0001)
-                        ke.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
+                        ki4.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
                         time.sleep(0.0001)						
                         G.preventedJoinByTicket = True
-                        kk.updateGroup(G)
+                        ki2.updateGroup(G)
                     else:
-                        G = kk.getGroup(op.param1)
+                        G = ki2.getGroup(op.param1)
                         random.choice(Rfu).kickoutFromGroup(op.param1,[op.param2])
                         G.preventedJoinByTicket = False
-                        kk.updateGroup(G)
-                        ticket = kk.reissueGroupTicket(op.param1)
-                        kc.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
+                        ki2.updateGroup(G)
+                        ticket = ki2.reissueGroupTicket(op.param1)
+                        ki3.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
                         time.sleep(0.0001)
                         line.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
                         time.sleep(0.0001)
-                        ki.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
+                        ki1.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
                         time.sleep(0.0001)
-                        kk.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
+                        ki2.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
                         time.sleep(0.0001)
-                        ke.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
+                        ki4.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
                         time.sleep(0.0001)						
                         G.preventedJoinByTicket = True
-                        kc.updateGroup(G)
+                        ki3.updateGroup(G)
                         settings["blacklist"][op.param2] = True
-                elif op.param3 in keMID:
-                    if op.param2 in kcMID:
-                        G = ke.getGroup(op.param1)
+                elif op.param3 in ki4MID:
+                    if op.param2 in ki3MID:
+                        G = ki4.getGroup(op.param1)
                         G.preventedJoinByTicket = False
-                        ke.updateGroup(G)
-                        ticket = ke.reissueGroupTicket(op.param1)
-                        kc.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
+                        ki4.updateGroup(G)
+                        ticket = ki4.reissueGroupTicket(op.param1)
+                        ki3.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
                         time.sleep(0.0001)
                         line.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
                         time.sleep(0.0001)
-                        ki.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
+                        ki1.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
                         time.sleep(0.0001)
-                        kk.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
+                        ki2.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
                         time.sleep(0.0001)
-                        ke.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
+                        ki4.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
                         time.sleep(0.0001)						
                         G.preventedJoinByTicket = True
-                        kc.updateGroup(G)
+                        ki3.updateGroup(G)
                     else:
-                        G = ke.getGroup(op.param1)
+                        G = ki4.getGroup(op.param1)
                         random.choice(Rfu).kickoutFromGroup(op.param1,[op.param2])
                         G.preventedJoinByTicket = False
-                        ke.updateGroup(G)
-                        ticket = ke.reissueGroupTicket(op.param1)
-                        kc.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
+                        ki4.updateGroup(G)
+                        ticket = ki4.reissueGroupTicket(op.param1)
+                        ki3.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
                         time.sleep(0.0001)
                         line.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
                         time.sleep(0.0001)
-                        ki.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
+                        ki1.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
                         time.sleep(0.0001)
-                        kk.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
+                        ki2.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
                         time.sleep(0.0001)
-                        ke.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
+                        ki4.acceptGroupInvitationByTicket(op.param1,format(str(ticket)))
                         time.sleep(0.0001)						
                         G.preventedJoinByTicket = True
-                        ke.updateGroup(G)
+                        ki4.updateGroup(G)
                         settings["blacklist"][op.param2] = True
             except:
                 pass
