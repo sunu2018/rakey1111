@@ -19,24 +19,30 @@ line.log("Auth Token : " + str(line.authToken))
 line.log("Timeline Token : " + str(line.tl.channelAccessToken))
 
 #ki = LINE()
-ki = LINE('EsYg5wUN5nLcVCxSJ3z0.iDa9AVYz6rFwW13kJ4ITGa.GZ88i3wkxYGSzkKQH0z8CMlFXSw6+rNf/8oQWg/po4I=')
-ki.log("Auth Token : " + str(ki.authToken))
-ki.log("Timeline Token : " + str(ki.tl.channelAccessToken))
+#ki = LINE('EsYg5wUN5nLcVCxSJ3z0.iDa9AVYz6rFwW13kJ4ITGa.GZ88i3wkxYGSzkKQH0z8CMlFXSw6+rNf/8oQWg/po4I=')
+#ki.log("Auth Token : " + str(ki.authToken))
+#ki.log("Timeline Token : " + str(ki.tl.channelAccessToken))
 
 #kk = LINE()
-kk = LINE('EsPCvQELzdTx7aGiw3K3.qsK61HExwlmqEBinYsMjuW.aEx4uTdikUhEbFfJUhEEeRODvzjDApqzINgiA2ii3fk=')
-kk.log("Auth Token : " + str(kk.authToken))
-kk.log("Timeline Token : " + str(kk.tl.channelAccessToken))
+#kk = LINE('EsPCvQELzdTx7aGiw3K3.qsK61HExwlmqEBinYsMjuW.aEx4uTdikUhEbFfJUhEEeRODvzjDApqzINgiA2ii3fk=')
+#kk.log("Auth Token : " + str(kk.authToken))
+#kk.log("Timeline Token : " + str(kk.tl.channelAccessToken))
 
 #kc = LINE()
-kc = LINE('Esou9R5EfuroC6Uxf7mb.K25tKOCA99q9Zhkth9BFgW.eL/HWu05JVIdCHC23PMpatmt+CgwLVOQUPP3Wtol4mo=')
-kc.log("Auth Token : " + str(kc.authToken))
-kc.log("Timeline Token : " + str(kc.tl.channelAccessToken))
+#kc = LINE('Esou9R5EfuroC6Uxf7mb.K25tKOCA99q9Zhkth9BFgW.eL/HWu05JVIdCHC23PMpatmt+CgwLVOQUPP3Wtol4mo=')
+#kc.log("Auth Token : " + str(kc.authToken))
+#kc.log("Timeline Token : " + str(kc.tl.channelAccessToken))
 
 #ke = LINE()
-ke = LINE('EsGOODOrQFCDp5zBqGma.pqoBzMdkYYOpcZZ1vQYTYG.8gN2GCVDaFJE766OspNPYiXVFg9G8KIZZQG34ZlsSTU=')
-ke.log("Auth Token : " + str(ke.authToken))
-ke.log("Timeline Token : " + str(ke.tl.channelAccessToken))
+#ke = LINE('EsGOODOrQFCDp5zBqGma.pqoBzMdkYYOpcZZ1vQYTYG.8gN2GCVDaFJE766OspNPYiXVFg9G8KIZZQG34ZlsSTU=')
+#ke.log("Auth Token : " + str(ke.authToken))
+#ke.log("Timeline Token : " + str(ke.tl.channelAccessToken))
+
+ki = LINE("EuMog9y5XK0HpLVD5NQd.1nbyMEq08x6C7rz2+Bti7q.AbZpd2NL+U67ENU7foUKRyx+rbCvL7JfxCSIgFep34E=")
+kk = LINE("EuEI1iUJoxtcMCdjAwXa.O9c5p841tRUgzA9d0PcAkG.BmkT3cVrFLnqV5SDsGHtV2R+Bwk4tH7HpLYcJY1FbCk=")
+kc = LINE("EuB2nqViXB9yVC6Hv4id.dCZhkZtrJsP18XdGxTjDlq.lfF8ng308Ftvk0pwuhDN9xyhwzsJdtF8Rc5kytYYCd4=")
+ke = LINE("EuzzT05VEW5hnfk4S6v3.NONcEvn2cxU/zuRhr3ZHOW.1EusstaqkeTioe+S1j8fscJMoh2+NTFjrt/yDiclAp0=")
+
 
 
 print ("Login Succes")
